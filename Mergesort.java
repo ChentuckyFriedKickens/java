@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Mergesort {
-  double list[] = { 123, 50, 213, 59, 21, 69 };
+  double list[] = { 123, 50, 213, 59, 21, 69, 5 };
 
   public static void main(String[] args) {
     Mergesort program = new Mergesort();
@@ -10,6 +10,11 @@ class Mergesort {
   }
 
   void Sort(double array[]) {
-    System.out.println("hello world, " + i + " + 2 is " + (i + 2));
+    if (list.length % 2 == 0) {
+      System.out.println("list can be split in half");
+
+    } else {
+      System.out.println("list cannot be split in half");
+    }
   }
 }
