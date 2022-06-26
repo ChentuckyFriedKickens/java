@@ -1,20 +1,18 @@
 import java.util.*;
 
 class Mergesort {
-  double list[] = { 123, 50, 213, 59, 21, 69, 5 };
+  int[] list = { 3, 7, 8, 5, 4, 2, 6, 1 };
+  int[][] list2d = {};
 
   public static void main(String[] args) {
     Mergesort program = new Mergesort();
 
-    program.Sort(program.list);
+    program.Sort();
   }
 
-  void Sort(double array[]) {
-    if (list.length % 2 == 0) {
-      System.out.println("list can be split in half");
-
-    } else {
-      System.out.println("list cannot be split in half");
+  void Sort() {
+    for (int i = 0; i < list.length; i++) {
+      list2d[i] = new int(i);
     }
   }
 }
