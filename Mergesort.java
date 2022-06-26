@@ -14,8 +14,10 @@ class Mergesort {
     for (int i = 0; i < list.length; i++) {
       list2d[i] = new int[] { list[i] };
     }
+    System.out.print("{ ");
     for (int j = 0; j < list2d.length; j++) {
       System.out.print("{ " + list2d[j][0] + " }, ");
     }
+    System.out.print("}");
   }
 }
