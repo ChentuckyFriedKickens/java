@@ -7,16 +7,16 @@ class Mergesort {
   public static void main(String[] args) {
     Mergesort program = new Mergesort();
 
-    program.Sort();
+    program.Set2D(program.list, program.list2d);
   }
 
-  void Sort() {
-    for (int i = 0; i < list.length; i++) {
-      list2d[i] = new int[] { list[i] };
+  void Set2D(int[] list1D, int[][] list2D) {
+    for (int i = 0; i < list1D.length; i++) {
+      list2D[i] = new int[] { list1D[i] };
     }
-    System.out.print("{ ");
-    for (int j = 0; j < list2d.length; j++) {
-      System.out.print("{ " + list2d[j][0] + " }, ");
+    System.out.print("2D converted array: { ");
+    for (int j = 0; j < list2D.length; j++) {
+      System.out.print("{ " + list2D[j][0] + " }, ");
     }
     System.out.print("}");
   }
