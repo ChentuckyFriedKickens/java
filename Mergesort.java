@@ -2,7 +2,7 @@ import java.util.*;
 
 class Mergesort {
   int[] list = { 3, 7, 8, 5, 4, 2, 6, 1 };
-  int[][] list2d = {};
+  int[][] list2d = new int[list.length][];
 
   public static void main(String[] args) {
     Mergesort program = new Mergesort();
@@ -11,8 +11,11 @@ class Mergesort {
   }
 
   void Sort() {
+
     for (int i = 0; i < list.length; i++) {
-      list2d[i] = new int(i);
+
     }
+    list2d[0] = new int[] { list[0] };
+    System.out.println(list2d[0][0]);
   }
 }
