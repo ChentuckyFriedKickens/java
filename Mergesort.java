@@ -11,11 +11,11 @@ class Mergesort {
   }
 
   void Sort() {
-
     for (int i = 0; i < list.length; i++) {
-
+      list2d[i] = new int[] { list[0] };
     }
-    list2d[0] = new int[] { list[0] };
-    System.out.println(list2d[0][0]);
+    for (int j = 0; j < list2d.length; j++) {
+      System.out.print(list2d[j][0] + ", ");
+    }
   }
 }
