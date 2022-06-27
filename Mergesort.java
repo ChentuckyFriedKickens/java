@@ -7,7 +7,12 @@ class Mergesort {
   public static void main(String[] args) {
     Mergesort program = new Mergesort();
 
-    program.Set2D(program.list, program.list2d);
+    program.Sort();
+  }
+
+  void Sort() {
+    int[] list2 = new int[list.length / 2];
+    System.out.println(list2.length);
   }
 
   void Set2D(int[] list1D, int[][] list2D) {
@@ -18,6 +23,8 @@ class Mergesort {
     for (int j = 0; j < list2D.length; j++) {
       System.out.print("{ " + list2D[j][0] + " }, ");
     }
-    System.out.print("}");
+    System.out.println("}");
+    list1D = list2D[0];
+
   }
 }
