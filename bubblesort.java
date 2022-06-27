@@ -4,8 +4,8 @@ class bubblesort {
   int swaps = -1;
   int position;
 
-  double x;
-  double[] list = { 123, 50, 213, 59, 21, 69 };
+  int x;
+  int[] list = { 3, 7, 8, 5, 4, 2, 6, 1 };
 
   public static void main(String[] args) {
     bubblesort sort = new bubblesort();
@@ -13,7 +13,7 @@ class bubblesort {
     sort.Sort(sort.list);
   }
 
-  void Sort(double[] array) {
+  void Sort(int[] array) {
     System.out.println("Starting algorithm");
 
     int p = 0;
