@@ -6,23 +6,26 @@ public class BinarySearch {
   public static void main(String[] args) {
     BinarySearch program = new BinarySearch();
 
-    program.Search(program.list, 3);
+    program.Search(program.list, 7);
   }
 
   void Search(int[] arr, int item) {
+    int start = 0;
+    int end = arr.length - 1;
     boolean found = false;
-    int i = 0;
 
-    while (found != true & i <= arr.length) {
-      i++;
-      int mid = arr.length / 2 - 1;
-      int median = arr[mid];
+    while ((start <= end) && (found == false)) {
+      int mid = (start + end) / 2;
 
-      System.out.println(median);
-
-      if (median == item) {
+      if (arr[mid] == item) {
         found = true;
-        System.out.println("It has been found, the median is " + median + " and it is in the index: " + mid);
+        System.out.println(arr[mid] + " is in index " + mid + " of the list");
+      } else {
+        if (arr[mid] > item) {
+          end = mid - 1;
+        } else if (arr[mid] < item) {
+          start = mid + 1;
+        }
       }
     }
   }
